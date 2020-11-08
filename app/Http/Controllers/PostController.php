@@ -25,14 +25,9 @@ class PostController extends Controller
 
     public function update(Request $request, $id)
     {
-        $data = $request->all();
-
-
         try {
-            $post = Post::FindOrFail($id);
-            $post->update($data);
-
-            return $post;
+            Post::FindOrFail($id)->update($request->all());
+            return response()->json(['message' => "Post has been updated"]);
         } catch (Exception $th) {
             return response()->json(['message' => $th->getMessage()], 404);
         }
@@ -54,10 +49,7 @@ class PostController extends Controller
 
     public function delete($id)
     {
-        return Post::destroy($id);
+        Post::destroy($id);
+        return response()->json(['message' => "Post has been deleted"]);
     }
-
 }
-
-
-
