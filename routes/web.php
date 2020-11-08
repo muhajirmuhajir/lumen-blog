@@ -1,5 +1,4 @@
 <?php
-use Illuminate\Support\Str;
 
 /** @var \Laravel\Lumen\Routing\Router $router */
 
@@ -17,3 +16,14 @@ use Illuminate\Support\Str;
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('post', 'PostController@index');
+
+$router->get('post/{id}', 'PostController@show');
+
+$router->post('/post', 'PostController@store');
+
+$router->put('post/{id}', 'PostController@update');
+
+$router->delete('post/{id}', 'PostController@delete');
+
