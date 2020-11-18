@@ -14,11 +14,11 @@
 
 ## API Specification
 
-Klik Untuk Dokumentasi Lebih Lanjut [disini](https://web.postman.co/collections/9109368-6e704b60-93a0-488a-aa4c-7c14cf480ecd?version=latest&workspace=dceec346-2fe8-4f0b-bc08-7758a87d0f0c)
+Klik Untuk Dokumentasi Lebih Lanjut [disini](https://documenter.getpostman.com/view/9109368/TVeqe82M)
 
 <br>
 
-### Login User
+>### Login User
 
 Request :
 
@@ -41,7 +41,7 @@ Response :
 
 <br>
 
-### Register User
+>### Register User
 
 Request :
 
@@ -66,7 +66,7 @@ Response :
 
 <br>
 
-### Get User
+>### Get User
 
 Request :
 
@@ -98,7 +98,7 @@ Response :
 
 <br>
 
-### Get User By ID
+>### Get User By ID
 
 Request :
 
@@ -123,7 +123,7 @@ Response :
 
 <br>
 
-### Update User By ID
+>### Update User By ID
 
 Request :
 
@@ -146,7 +146,7 @@ Response :
 
 <br>
 
-### Delete User By ID
+>### Delete User By ID
 
 Request :
 
@@ -165,7 +165,7 @@ Response :
 
 <br>
 
-### Logout User
+>### Logout User
 
 Request :
 
@@ -184,7 +184,7 @@ Response :
 
 <br>
 
-### Get Post
+>### Get Post
 
 Request :
 
@@ -210,7 +210,7 @@ Response :
 
 <br>
 
-### Get Post By ID (Detail)
+>### Get Post By ID (Detail)
 
 Request :
 
@@ -233,7 +233,7 @@ Response :
 
 <br>
 
-### Create POST
+>### Create POST
 
 Request :
 
@@ -261,7 +261,7 @@ Response :
 
 <br>
 
-### Update POST
+>### Update POST
 
 Request :
 
@@ -283,7 +283,7 @@ Response :
 
 <br>
 
-### Delete POST
+>### Delete POST
 
 Request :
 
