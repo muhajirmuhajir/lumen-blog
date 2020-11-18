@@ -1,14 +1,22 @@
 # Lumen Blog API Kelompok 1
 
--   Alvan Dwi Akbar A. - 185150701111005
--   Moh Izza Auladina L. - 185150707111009
--   Joey Vilbert - 185150707111001
--   Yanuar Octavianus - 185150700111006
--   Muhajir - 185150701111010
--   Denny Manuel Yeremia S. - 185150707111004
--   Andi Achmad Fauzi - 185150701111004
+   |Nama                     |NIM       |Kelas|
+   |-------------------------|---------------|-|
+   |Alvan Dwi Akbar A.       |185150701111005|A|
+   |Moh Izza Auladina L.     |185150707111009|B|
+   |Joey Vilbert             |185150707111001|B|
+   |Muhajir                  |185150701111010|A|
+   |Yanuar Octavianus        |185150700111006|B|
+   |Denny Manuel Yeremia S.  |185150707111004|A|
+   |Andi Achmad Fauzi R.     |185150701111004|A|
+
+<br>
 
 ## API Specification
+
+Klik Untuk Dokumentasi Lebih Lanjut [disini](https://web.postman.co/collections/9109368-6e704b60-93a0-488a-aa4c-7c14cf480ecd?version=latest&workspace=dceec346-2fe8-4f0b-bc08-7758a87d0f0c)
+
+<br>
 
 ### Login User
 
@@ -30,6 +38,8 @@ Response :
     "expires_in": "number"
 }
 ```
+
+<br>
 
 ### Register User
 
@@ -53,6 +63,8 @@ Response :
     "id": 17
 }
 ```
+
+<br>
 
 ### Get User
 
@@ -84,6 +96,8 @@ Response :
 ]
 ```
 
+<br>
+
 ### Get User By ID
 
 Request :
@@ -107,6 +121,8 @@ Response :
 ]
 ```
 
+<br>
+
 ### Update User By ID
 
 Request :
@@ -128,6 +144,8 @@ Response :
 }
 ```
 
+<br>
+
 ### Delete User By ID
 
 Request :
@@ -144,6 +162,8 @@ Response :
     "message": "User has been deleted"
 }
 ```
+
+<br>
 
 ### Logout User
 
@@ -162,7 +182,7 @@ Response :
 }
 ```
 
-
+<br>
 
 ### Get Post
 
@@ -188,6 +208,8 @@ Response :
 ]
 ```
 
+<br>
+
 ### Get Post By ID (Detail)
 
 Request :
@@ -209,25 +231,7 @@ Response :
 }
 ```
 
-### Update POST
-
-Request :
-
--   Method : PUT
--   Endpoint : `/post/{post_id}`
--   Header :
-    -   Authorization : bearer string
--   Body :
-    - title : string
-    - body : string
-
-Response :
-
-```json   
-{
-    "message": "Post has been updated"
-}
-```
+<br>
 
 ### Create POST
 
@@ -255,6 +259,29 @@ Response :
 }
 ```
 
+<br>
+
+### Update POST
+
+Request :
+
+-   Method : PUT
+-   Endpoint : `/post/{post_id}`
+-   Header :
+    -   Authorization : bearer string
+-   Body :
+    - title : string
+    - body : string
+
+Response :
+
+```json   
+{
+    "message": "Post has been updated"
+}
+```
+
+<br>
 
 ### Delete POST
 
