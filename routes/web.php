@@ -32,9 +32,12 @@ $router->get('user', 'UserController@index');
 
 $router->get('user/{id}', 'UserController@show');
 
-$router->post('/user', 'UserController@store');
-
 $router->put('user/{id}', 'UserController@update');
 
 $router->delete('user/{id}', 'UserController@delete');
 
+$router->post('user/login', 'UserController@login');
+
+$router->post('user/register', 'UserController@register');
+
+$router->post('user/logout', 'UserController@logout');

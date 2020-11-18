@@ -9,9 +9,14 @@ use Illuminate\Http\Request;
 class PostController extends Controller
 {
 
+    public function __construct()
+    {
+      $this->middleware('auth:api', ['except' => ['index', 'show']]);
+    }
+
     public function index(Request $request)
     {
-        return Post::all();
+        return Post::all()->makeHidden(['created_at', 'updated_at'])->toArray();
     }
 
     public function show(Request $request, $id)
